@@ -1,0 +1,1233 @@
+{
+  "mod_elements": [
+    {
+      "name": "Dialog",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dialog",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/westped/Dialog.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "Westped",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "westped",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/command/WestpedCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Menu",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "menu",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/westped/Menu.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "DynamicLight",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dynamic_light",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/westped/DynamicLight.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "Desert",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wastped/worldgen/configured_feature/desert_tree.json",
+          "src/main/java/deskped/wastped/world/features/treedecorators/DesertFruitDecorator.java",
+          "src/main/java/deskped/wastped/world/features/treedecorators/DesertLeaveDecorator.java",
+          "src/main/resources/data/wastped/worldgen/placed_feature/desert_tree.json",
+          "src/main/java/deskped/wastped/world/features/treedecorators/DesertTrunkDecorator.java",
+          "src/main/resources/data/wastped/worldgen/biome/desert.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes"
+    },
+    {
+      "name": "Wastegrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastegrass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wastped/models/item/wastegrass.json",
+          "src/main/resources/assets/wastped/blockstates/wastegrass.json",
+          "src/main/resources/data/wastped/loot_tables/blocks/wastegrass.json",
+          "src/main/java/deskped/wastped/block/WastegrassBlock.java",
+          "src/main/resources/assets/wastped/models/block/wastegrass.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes/blocks"
+    },
+    {
+      "name": "WindParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wind_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/westped/particles/wind_particle.json",
+          "src/main/java/deskped/westped/client/particle/WindParticleParticle.java"
+        ]
+      },
+      "path": "~/0/Generation"
+    },
+    {
+      "name": "WindOld",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wind_old",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/westped/WindOld.java"
+        ]
+      },
+      "path": "~/0/Generation"
+    },
+    {
+      "name": "Waste",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waste",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wastped/dimension_type/waste.json",
+          "src/main/resources/data/wastped/dimension/waste.json",
+          "src/main/java/deskped/wastped/world/dimension/WasteDimension.java"
+        ]
+      },
+      "path": "~/0/Generation"
+    },
+    {
+      "name": "DoAutospawnInWaste",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "do_autospawn_in_waste",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/0/Generation"
+    },
+    {
+      "name": "TPWaste",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_waste",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/TPWasteProcedure.java"
+        ]
+      },
+      "path": "~/0/Generation/TpDimensions"
+    },
+    {
+      "name": "TPOverworld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_overworld",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/TPOverworldProcedure.java"
+        ]
+      },
+      "path": "~/0/Generation/TpDimensions"
+    },
+    {
+      "name": "TPNether",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_nether",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/TPNetherProcedure.java"
+        ]
+      },
+      "path": "~/0/Generation/TpDimensions"
+    },
+    {
+      "name": "TPEnd",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/TPEndProcedure.java"
+        ]
+      },
+      "path": "~/0/Generation/TpDimensions"
+    },
+    {
+      "name": "Wind",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wind",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/westped/Wind.java"
+        ]
+      },
+      "path": "~/0/Generation"
+    },
+    {
+      "name": "NewSky",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "new_sky",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/westped/NewSky.java"
+        ]
+      },
+      "path": "~/0/Generation"
+    },
+    {
+      "name": "NewSkyDay",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "new_sky_day",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/westped/NewSkyDay.java"
+        ]
+      },
+      "path": "~/0/Generation"
+    },
+    {
+      "name": "NewSkyAdd",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "new_sky_add",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/westped/NewSkyAdd.java"
+        ]
+      },
+      "path": "~/0/Generation"
+    },
+    {
+      "name": "Gate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wastped/blockstates/gate.json",
+          "src/main/resources/assets/wastped/models/item/gate.json",
+          "src/main/resources/assets/wastped/models/block/gate.json",
+          "src/main/java/deskped/wastped/block/GateBlock.java",
+          "src/main/java/deskped/wastped/block/entity/GateBlockEntity.java",
+          "src/main/resources/data/wastped/loot_tables/blocks/gate.json",
+          "src/main/java/deskped/wastped/client/renderer/block/GateRenderer.java"
+        ]
+      },
+      "path": "~/0/Blocks"
+    },
+    {
+      "name": "SandBricks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_bricks",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/block/SandBricksBlock.java",
+          "src/main/resources/assets/wastped/blockstates/sand_bricks.json",
+          "src/main/resources/data/wastped/loot_tables/blocks/sand_bricks.json",
+          "src/main/resources/assets/wastped/models/block/sand_bricks.json",
+          "src/main/resources/assets/wastped/models/item/sand_bricks.json"
+        ]
+      },
+      "path": "~/0/Blocks"
+    },
+    {
+      "name": "TumaniteCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tumanite_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wastped/models/item/tumanite_crystal.json",
+          "src/main/java/deskped/wastped/item/TumaniteCrystalItem.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "GateOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gate_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/GateOpenProcedure.java"
+        ]
+      },
+      "path": "~/0/Blocks/Procedures"
+    },
+    {
+      "name": "GateTik",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gate_tik",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/GateTikProcedure.java"
+        ]
+      },
+      "path": "~/0/Blocks/Procedures"
+    },
+    {
+      "name": "GateElse1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gate_else_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/deskped/wastped/procedures/GateElse1Procedure.java"
+        ]
+      },
+      "path": "~/0/Blocks/Procedures"
+    },
+    {
+      "name": "GateElse2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gate_else_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/deskped/wastped/procedures/GateElse2Procedure.java"
+        ]
+      },
+      "path": "~/0/Blocks/Procedures"
+    },
+    {
+      "name": "MenuOld",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "menu_old",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/MenuOld.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "IfMenu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_menu",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/deskped/wastped/procedures/IfMenuProcedure.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "Mesa",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mesa",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/world/features/treedecorators/MesaFruitDecorator.java",
+          "src/main/java/deskped/wastped/world/features/treedecorators/MesaTrunkDecorator.java",
+          "src/main/resources/data/wastped/worldgen/configured_feature/mesa_tree.json",
+          "src/main/java/deskped/wastped/world/features/treedecorators/MesaLeaveDecorator.java",
+          "src/main/resources/data/wastped/worldgen/biome/mesa.json",
+          "src/main/resources/data/wastped/worldgen/placed_feature/mesa_tree.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes"
+    },
+    {
+      "name": "SaltBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wastped/loot_tables/blocks/salt_block.json",
+          "src/main/resources/assets/wastped/models/block/salt_block.json",
+          "src/main/resources/assets/wastped/models/item/salt_block.json",
+          "src/main/java/deskped/wastped/block/SaltBlockBlock.java",
+          "src/main/resources/assets/wastped/blockstates/salt_block.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes/blocks"
+    },
+    {
+      "name": "SaltPKM",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_pkm",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/SaltPKMProcedure.java"
+        ]
+      },
+      "path": "~/0/Generation/Biomes/blocks"
+    },
+    {
+      "name": "Salt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/item/SaltItem.java",
+          "src/main/resources/assets/wastped/models/item/salt.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes/blocks"
+    },
+    {
+      "name": "PlayerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/PlayerTickProcedure.java"
+        ]
+      },
+      "path": "~/0/Players"
+    },
+    {
+      "name": "PlayerEat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_eat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/PlayerEatProcedure.java"
+        ]
+      },
+      "path": "~/0/Players"
+    },
+    {
+      "name": "ThirstTik",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thirst_tik",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/ThirstTikProcedure.java"
+        ]
+      },
+      "path": "~/0/Players/effects"
+    },
+    {
+      "name": "Thirst",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thirst",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/potion/ThirstMobEffect.java"
+        ]
+      },
+      "path": "~/0/Players/effects"
+    },
+    {
+      "name": "BlockSalt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_salt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wastped/recipes/block_salt.json",
+          "src/main/resources/data/wastped/advancements/recipes/block_salt.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes/blocks"
+    },
+    {
+      "name": "DesertField",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_field",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/world/features/treedecorators/DesertFieldTrunkDecorator.java",
+          "src/main/java/deskped/wastped/world/features/treedecorators/DesertFieldLeaveDecorator.java",
+          "src/main/resources/data/wastped/worldgen/configured_feature/desert_field_tree.json",
+          "src/main/java/deskped/wastped/world/features/treedecorators/DesertFieldFruitDecorator.java",
+          "src/main/resources/data/wastped/worldgen/biome/desert_field.json",
+          "src/main/resources/data/wastped/worldgen/placed_feature/desert_field_tree.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes"
+    },
+    {
+      "name": "SaltField",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_field",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/world/features/treedecorators/SaltFieldFruitDecorator.java",
+          "src/main/resources/data/wastped/worldgen/configured_feature/salt_field_tree.json",
+          "src/main/resources/data/wastped/worldgen/placed_feature/salt_field_tree.json",
+          "src/main/resources/data/wastped/worldgen/biome/salt_field.json",
+          "src/main/java/deskped/wastped/world/features/treedecorators/SaltFieldTrunkDecorator.java",
+          "src/main/java/deskped/wastped/world/features/treedecorators/SaltFieldLeaveDecorator.java"
+        ]
+      },
+      "path": "~/0/Generation/Biomes"
+    },
+    {
+      "name": "Wasteland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/world/features/treedecorators/WastelandLeaveDecorator.java",
+          "src/main/resources/data/wastped/worldgen/placed_feature/wasteland_tree.json",
+          "src/main/resources/data/wastped/worldgen/configured_feature/wasteland_tree.json",
+          "src/main/java/deskped/wastped/world/features/treedecorators/WastelandTrunkDecorator.java",
+          "src/main/resources/data/wastped/worldgen/biome/wasteland.json",
+          "src/main/java/deskped/wastped/world/features/treedecorators/WastelandFruitDecorator.java"
+        ]
+      },
+      "path": "~/0/Generation/Biomes"
+    },
+    {
+      "name": "CrystalDesert",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_desert",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wastped/worldgen/biome/crystal_desert.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes"
+    },
+    {
+      "name": "StickToPlanks",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stick_to_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wastped/recipes/stick_to_planks.json",
+          "src/main/resources/data/wastped/advancements/recipes/stick_to_planks.json"
+        ]
+      },
+      "path": "~/0/Generation/Biomes/blocks"
+    },
+    {
+      "name": "RareDigger",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rare_digger",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/RareDigger.java"
+        ]
+      },
+      "path": "~/0"
+    },
+    {
+      "name": "AnfiraDelete",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anfira_delete",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/AnfiraDeleteProcedure.java"
+        ]
+      },
+      "path": "~/0/NPC/other"
+    },
+    {
+      "name": "Anfira",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anfira",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wastped/forge/biome_modifier/anfira_biome_modifier.json",
+          "src/main/java/deskped/wastped/entity/AnfiraEntity.java",
+          "src/main/java/deskped/wastped/client/renderer/AnfiraRenderer.java"
+        ]
+      },
+      "path": "~/0/NPC"
+    },
+    {
+      "name": "Anfiranoincode",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anfiranoincode",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wastped/particles/anfiranoincode.json",
+          "src/main/java/deskped/wastped/client/particle/AnfiranoincodeParticle.java"
+        ]
+      },
+      "path": "~/0/NPC/other"
+    },
+    {
+      "name": "Mirage",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mirage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wastped/advancements/mirage.json"
+        ]
+      },
+      "path": "~/0/NPC/other"
+    },
+    {
+      "name": "IfEnglish",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "if_english",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/deskped/wastped/procedures/IfEnglishProcedure.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "IfRussian",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "if_russian",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/deskped/wastped/procedures/IfRussianProcedure.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "LogoAnimation",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "logo_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/LogoAnimation.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "IndianMale",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indian_male",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/client/renderer/IndianMaleRenderer.java",
+          "src/main/resources/data/wastped/forge/biome_modifier/indian_male_biome_modifier.json",
+          "src/main/java/deskped/wastped/entity/IndianMaleEntity.java"
+        ]
+      },
+      "path": "~/0/NPC"
+    },
+    {
+      "name": "IndianFemale",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indian_female",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/entity/IndianFemaleEntity.java",
+          "src/main/resources/data/wastped/forge/biome_modifier/indian_female_biome_modifier.json",
+          "src/main/java/deskped/wastped/client/renderer/IndianFemaleRenderer.java"
+        ]
+      },
+      "path": "~/0/NPC"
+    },
+    {
+      "name": "IfPlayerDie",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_player_die",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/IfPlayerDieProcedure.java"
+        ]
+      },
+      "path": "~/0/Players"
+    },
+    {
+      "name": "IfPlayerSpawnV1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_player_spawn_v_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/deskped/wastped/procedures/IfPlayerSpawnV1Procedure.java"
+        ]
+      },
+      "path": "~/0/Players"
+    },
+    {
+      "name": "FermersFast",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fermers_fast",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/FermersFast.java"
+        ]
+      },
+      "path": "~/MyPED"
+    },
+    {
+      "name": "HARDCORE",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hardcore",
+      "metadata": {
+        "files": [
+          "src/main/java/deskped/wastped/HARDCORE.java"
+        ]
+      },
+      "path": "~/MyPED"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "custommenu",
+      "type": "logic",
+      "scope": "global",
+      "value": "true"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:CrystalDesert",
+      "~CUSTOM:Wasteland",
+      "~CUSTOM:SaltField",
+      "~CUSTOM:DesertField",
+      "~CUSTOM:Mesa",
+      "~CUSTOM:Desert"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~CUSTOM:CrystalDesert",
+      "~CUSTOM:Wasteland",
+      "~CUSTOM:SaltField",
+      "~CUSTOM:DesertField",
+      "~CUSTOM:Mesa",
+      "~CUSTOM:Desert"
+    ],
+    "BIOMES:minecraft:has_structure/desert_pyramid": [
+      "~CUSTOM:DesertField",
+      "~CUSTOM:Desert"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck": [
+      "~CUSTOM:Mesa",
+      "~CUSTOM:Desert"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:Desert"
+    ],
+    "BIOMES:minecraft:has_structure/ocean_ruin_warm": [
+      "~CUSTOM:CrystalDesert",
+      "~CUSTOM:Wasteland",
+      "~CUSTOM:SaltField",
+      "~CUSTOM:DesertField",
+      "~CUSTOM:Mesa",
+      "~CUSTOM:Desert"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.SAND#1",
+      "~Blocks.STAINED_HARDENED_CLAY#12",
+      "~CUSTOM:SaltBlock",
+      "~Blocks.AMETHYST_BLOCK",
+      "~Blocks.SMOOTH_RED_SANDSTONE",
+      "~Blocks.HARDENED_CLAY",
+      "~Blocks.CALCITE",
+      "~Blocks.SANDSTONE#0",
+      "~Blocks.SAND#0"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SandBricks"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:SandBricks"
+    ],
+    "BIOMES:minecraft:has_structure/bastion_remnant": [
+      "~CUSTOM:Mesa"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:SaltBlock"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:SaltField"
+    ],
+    "BIOMES:minecraft:has_structure/jungle_temple": [
+      "~CUSTOM:CrystalDesert"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gamerule.doAutospawnInWaste.description": "Spawn player\u0027s in waste dimension?",
+      "gamerule.doAutospawnInWaste": "Do autospawn in waste dimension?",
+      "command.wastped.operator": "§cOperator privileges are required to execute this command!",
+      "biome.wastped.desert": "Waste Desert",
+      "block.wastped.wastegrass": "Waste Grass",
+      "block.wastped.gate": "Gate",
+      "block.wastped.sand_bricks": "Sand Bricks",
+      "item.wastped.tumanite_crystal": "Tumanite Crystal",
+      "biome.wastped.mesa": "Waste Mesa",
+      "block.wastped.salt_block": "Salt Block",
+      "item.wastped.salt": "Salt",
+      "effect.wastped.thirst": "Thirst",
+      "biome.wastped.desert_field": "Desert Field",
+      "biome.wastped.salt_field": "Salt Field",
+      "biome.wastped.wasteland": "Wasteland",
+      "biome.wastped.crystal_desert": "Crystal Desert",
+      "block.wastped.rare": "You\u0027re very lucky! You\u0027ve found an ancient fragment!",
+      "entity.wastped.anfira": "αηփϰϸѦ",
+      "advancements.mirage.descr": "Meet the mirage of a girl hanging motionless in the air",
+      "advancements.mirage.title": "Mirage αηփϰϸѦ",
+      "entity.wastped.indian_male": "Indian Male",
+      "entity.wastped.indian_female": "Indian Female"
+    },
+    "ru_ru": {
+      "gamerule.doAutospawnInWaste.description": "Ставить точку появления игроков в Пустоши?",
+      "gamerule.doAutospawnInWaste": "Спавнить в Пустоши?",
+      "command.westped.operator": "§cДля выполнения этой команды требуются права оператора!",
+      "biome.wastped.desert": "Пустошь",
+      "block.wastped.wastegrass": "Сухая трава",
+      "block.wastped.gate": "Врата",
+      "block.wastped.sand_bricks": "Песочные кирпичи",
+      "item.wastped.tumanite_crystal": "Туманитовый кристалл",
+      "biome.wastped.mesa": "Пустошь Мезы",
+      "block.wastped.salt_block": "Блок соли",
+      "item.wastped.salt": "Соль",
+      "effect.wastped.thirst": "Жажда",
+      "biome.wastped.desert_field": "Равнины пустоши",
+      "biome.wastped.salt_field": "Солённые равнины",
+      "biome.wastped.wasteland": "Пустырь",
+      "biome.wastped.crystal_desert": "Кристалльная пустыня",
+      "block.wastped.rare": "Вам очень повезло! Вы нашли древний обломок!",
+      "entity.wastped.anfira": "αηփϰϸѦ",
+      "advancements.mirage.descr": "Встретьте очертание некой девушки что неподвижно зависла в воздухе",
+      "advancements.mirage.title": "Мираж αηփϰϸѦ",
+      "entity.wastped.indian_male": "Индеец",
+      "entity.wastped.indian_female": "Индийская дама"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/deskped/wastped/init/WastpedModGameRules.java",
+      "src/main/java/deskped/wastped/init/WastpedModParticles.java",
+      "src/main/java/deskped/wastped/init/WastpedModParticleTypes.java",
+      "src/main/java/deskped/wastped/init/WastpedModMobEffects.java",
+      "src/main/java/deskped/wastped/init/WastpedModBlocks.java",
+      "src/main/java/deskped/wastped/init/WastpedModBlockEntities.java",
+      "src/main/java/deskped/wastped/init/WastpedModItems.java",
+      "src/main/java/deskped/wastped/init/WastpedModEntityRenderers.java",
+      "src/main/java/deskped/wastped/init/WastpedModEntities.java",
+      "src/main/java/deskped/wastped/network/WastpedModVariables.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/deskped/wastped/WastpedMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/deskped/wastped/init/WastpedModTabs.java",
+      "src/main/java/deskped/wastped/init/WastpedModModels.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "MyPED",
+        "children": []
+      },
+      {
+        "name": "0",
+        "children": [
+          {
+            "name": "Generation",
+            "children": [
+              {
+                "name": "Biomes",
+                "children": [
+                  {
+                    "name": "blocks",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "TpDimensions",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Blocks",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Players",
+            "children": [
+              {
+                "name": "effects",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "NPC",
+            "children": [
+              {
+                "name": "other",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "wastped",
+    "modName": "WastPED",
+    "version": "0",
+    "author": "Kuwma",
+    "websiteURL": "https://deskped.fun",
+    "license": "Mozilla Public License 2.0",
+    "serverSideOnly": false,
+    "modPicture": "wasteped",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Deskped",
+    "modElementsPackage": "deskped.wastped"
+  },
+  "mcreatorVersion": 202500345720
+}

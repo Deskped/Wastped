@@ -1,0 +1,46 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Thirst",
+    "icon": "thirst",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": -0.01,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": -0.01,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -0.01,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "onActiveTick": {
+      "name": "ThirstTik"
+    }
+  }
+}
